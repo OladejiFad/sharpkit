@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   ],
   applicationName: "SharpKit",
   generator: "Next.js",
+  verification: {
+    google: "UJCj6lk6RVLg0Cfy1JHVvUrqYeyGKowSkLuA3bDAoVc",
+  },
   robots: {
     index: true,
     follow: true,
@@ -48,4 +51,3 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
-
