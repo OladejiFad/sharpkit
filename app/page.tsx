@@ -773,81 +773,132 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer className="mt-12 border-t border-slate-200 py-8">
-          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="font-black tracking-tight">
-                SharpKit
-              </p>
+<footer className="mt-12 border-t border-slate-200 py-8">
+  <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+    <div>
+      <p className="font-black tracking-tight">
+        SharpKit
+      </p>
 
-              <p className="mt-1 text-xs text-slate-400">
-                Free image and document tools built for Nigeria.
-              </p>
-            </div>
+      <p className="mt-1 text-xs text-slate-400">
+        Free image and document tools built for Nigeria.
+      </p>
+    </div>
 
-            <div className="flex flex-wrap gap-4 text-xs font-bold text-slate-500">
-              <Link
-                href="/compress-image-to-20kb"
-                className="transition hover:text-emerald-600"
-              >
-                20KB
-              </Link>
+    <div className="flex flex-wrap gap-x-4 gap-y-3 text-xs font-bold text-slate-500">
+      <Link
+        href="/compress-image-to-20kb"
+        className="transition hover:text-emerald-600"
+      >
+        20KB
+      </Link>
 
-              <Link
-                href="/compress-image-to-50kb"
-                className="transition hover:text-emerald-600"
-              >
-                50KB
-              </Link>
+      <Link
+        href="/compress-image-to-50kb"
+        className="transition hover:text-emerald-600"
+      >
+        50KB
+      </Link>
 
-              <Link
-                href="/compress-image-to-200kb"
-                className="transition hover:text-emerald-600"
-              >
-                200KB
-              </Link>
+      <Link
+        href="/compress-image-to-200kb"
+        className="transition hover:text-emerald-600"
+      >
+        200KB
+      </Link>
 
-              <Link
-                href="/resize-image"
-                className="transition hover:text-emerald-600"
-              >
-                Resize
-              </Link>
+      <Link
+        href="/resize-image"
+        className="transition hover:text-emerald-600"
+      >
+        Resize
+      </Link>
 
-              <Link
-                href="/convert-image"
-                className="transition hover:text-emerald-600"
-              >
-                Convert
-              </Link>
+      <Link
+        href="/convert-image"
+        className="transition hover:text-emerald-600"
+      >
+        Convert
+      </Link>
 
-              <Link
-                href="/image-to-text"
-                className="transition hover:text-emerald-600"
-              >
-                Image to Text
-              </Link>
+      <Link
+        href="/image-to-text"
+        className="transition hover:text-emerald-600"
+      >
+        Image to Text
+      </Link>
 
-              <Link
-                href="/scanner"
-                className="transition hover:text-emerald-600"
-              >
-                Scanner
-              </Link>
+      <Link
+        href="/scanner"
+        className="transition hover:text-emerald-600"
+      >
+        Scanner
+      </Link>
 
-              <Link
-                href="/pdf-converter"
-                className="transition hover:text-emerald-600"
-              >
-                PDF
-              </Link>
-            </div>
-          </div>
+      <Link
+        href="/pdf-converter"
+        className="transition hover:text-emerald-600"
+      >
+        PDF
+      </Link>
 
-          <p className="mt-6 text-center text-xs text-slate-400 sm:text-left">
-            © {new Date().getFullYear()} SharpKit. All rights reserved.
-          </p>
-        </footer>
+      <Link
+        href="/document-restorer"
+        className="transition hover:text-emerald-600"
+      >
+        Document Restorer
+      </Link>
+    </div>
+  </div>
+
+  <div className="mt-6 flex flex-wrap gap-x-5 gap-y-3 border-t border-slate-100 pt-5 text-xs font-bold text-slate-400">
+    <Link
+      href="/about"
+      className="transition hover:text-emerald-600"
+    >
+      About
+    </Link>
+
+    <Link
+      href="/contact"
+      className="transition hover:text-emerald-600"
+    >
+      Contact
+    </Link>
+
+    <Link
+      href="/privacy-policy"
+      className="transition hover:text-emerald-600"
+    >
+      Privacy Policy
+    </Link>
+
+    <Link
+      href="/terms-of-service"
+      className="transition hover:text-emerald-600"
+    >
+      Terms of Service
+    </Link>
+
+    <Link
+      href="/cookie-policy"
+      className="transition hover:text-emerald-600"
+    >
+      Cookie Policy
+    </Link>
+
+    <a
+      href="mailto:sharpkit47@gmail.com"
+      className="transition hover:text-emerald-600"
+    >
+      Email Support
+    </a>
+  </div>
+
+  <p className="mt-6 text-center text-xs text-slate-400 sm:text-left">
+    © {new Date().getFullYear()} SharpKit. All rights reserved.
+  </p>
+</footer>
       </div>
     </main>
   );
