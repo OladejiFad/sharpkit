@@ -48,13 +48,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5977323637836587"
-          crossOrigin="anonymous"
-        />
-      </head>
+     <head>
+  <meta
+    name="google-adsense-account"
+    content="ca-pub-5977323637836587"
+  />
+
+  <Script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5977323637836587"
+    crossOrigin="anonymous"
+  />
+</head>
 
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
