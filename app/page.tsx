@@ -179,6 +179,28 @@ function LetterheadIcon() {
   );
 }
 
+function RestoreIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-6 w-6"
+      aria-hidden="true"
+    >
+      <path d="M4 7h16" />
+      <path d="M4 12h16" />
+      <path d="M4 17h16" />
+      <path d="M7 4v16" />
+      <path d="M12 4v16" />
+      <path d="M17 4v16" />
+    </svg>
+  );
+}
+
 function TextIcon() {
   return (
     <svg
@@ -320,12 +342,19 @@ const tools = [
       "Convert images, Word documents and Excel files to PDF directly in your browser.",
     href: "/pdf-converter",
   },
-  {
+    {
     icon: <LetterheadIcon />,
     title: "Letterhead Editor",
     description:
       "Edit documents on your letterhead, add text and signatures, and export as PDF.",
     href: "/letterhead-editor",
+  },
+  {
+    icon: <RestoreIcon />,
+    title: "Document Restorer",
+    description:
+      "Restore old and faded documents while preserving colors, text, stamps and signatures.",
+    href: "/document-restorer",
   },
   {
     icon: <SignPdfIcon />,
@@ -373,6 +402,12 @@ const faqs = [
     question: "Can I convert files to PDF?",
     answer:
       "Yes. SharpKit's PDF Converter supports images, TXT, Word documents and Excel files, and can also merge multiple PDF files.",
+  },
+
+    {
+    question: "Can I restore old or faded documents?",
+    answer:
+      "Yes. Document Restorer can improve brightness, contrast and sharpness while preserving the original colors, text, stamps, signatures and overall appearance.",
   },
   {
     question: "Can I scan a document and save it as PDF?",
