@@ -35,7 +35,7 @@ export default function CompressImageTo200KB() {
           </p>
         </header>
 
-        <Compressor />
+        <Compressor fixedTarget={200} />
 
         <section className="mt-12">
           <h2 className="text-2xl font-black sm:text-3xl">
@@ -53,11 +53,11 @@ export default function CompressImageTo200KB() {
             </div>
 
             <div>
-              <h3 className="font-black">2. Select 200KB</h3>
+              <h3 className="font-black">2. Let SharpKit compress it</h3>
 
               <p className="mt-1 leading-7 text-gray-600">
-                Choose the 200KB option. SharpKit will process the image
-                directly in your browser.
+                This page is already set to a 200KB target, so you do not
+                need to choose a target size manually.
               </p>
             </div>
 
@@ -108,8 +108,8 @@ export default function CompressImageTo200KB() {
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                Yes. Upload your JPG and select the 200KB option. SharpKit
-                will attempt to reduce the image to 200KB or below.
+                Yes. Upload your JPG and SharpKit will attempt to reduce the
+                image to 200KB or below.
               </p>
             </div>
 
@@ -171,35 +171,6 @@ export default function CompressImageTo200KB() {
           </div>
         </section>
 
-        <section className="mt-12 rounded-3xl bg-gray-50 p-6">
-          <h2 className="text-xl font-black">
-            Other SharpKit Image Compression Tools
-          </h2>
-
-          <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            <Link
-              href="/"
-              className="rounded-xl border border-gray-200 bg-white p-4 text-center font-bold transition hover:border-black hover:bg-black hover:text-white"
-            >
-              Image Compressor
-            </Link>
-
-            <Link
-              href="/compress-image-to-20kb"
-              className="rounded-xl border border-gray-200 bg-white p-4 text-center font-bold transition hover:border-black hover:bg-black hover:text-white"
-            >
-              Compress to 20KB
-            </Link>
-
-            <Link
-              href="/compress-image-to-50kb"
-              className="rounded-xl border border-gray-200 bg-white p-4 text-center font-bold transition hover:border-black hover:bg-black hover:text-white"
-            >
-              Compress to 50KB
-            </Link>
-          </div>
-        </section>
-
         <footer className="mt-16 border-t border-gray-200 py-8 text-center text-sm text-gray-500">
           <p className="font-bold text-gray-700">SharpKit</p>
 
@@ -211,3 +182,4 @@ export default function CompressImageTo200KB() {
     </main>
   );
 }
+
